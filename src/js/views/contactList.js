@@ -50,27 +50,27 @@ export const ContactList = () => {
                         <div className="container-fluid">
                             <div className="d-flex justify-content-around">
                                 <div className="card d-flex justify-content-center m-2" style={{ width: "54rem" }}>
-                                    <p className="fw-bold d-flex align-items-center justify-content-between m-1">
+                                    <p className="fw-bold d-flex align-items-center justify-content-between m-1" title="Contact name">
                                         {contact.full_name}
                                         <span className="d-flex">
                                             <span className="m-1">
-                                            <FontAwesomeIcon icon={faPencil} onClick={() => handleUpdateContact(contact.id)} />
+                                            <FontAwesomeIcon icon={faPencil} onClick={() => handleUpdateContact(contact.id)} title="Modify contact"/>
                                             </span>
                                             <span className="ml-auto m-1">
                                                 <FontAwesomeIcon icon={faTrashCan} onClick={() => {
                                                     setSelectedContactId(contact.id)
-                                                    setShowModal(true)}} data-bs-toggle="modal" data-bs-target="#exampleModal"/>
+                                                    setShowModal(true)}} data-bs-toggle="modal" data-bs-target="#exampleModal" title="Delete contact"/>
                                             </span>
                                         </span>
                                     </p>
                                     <p className="m-1">
-                                        <FontAwesomeIcon icon={faLocationDot} />{contact.address}
+                                        <FontAwesomeIcon icon={faLocationDot} title="Contact address"/>{contact.address}
                                     </p>
                                     <p className="m-1">
-                                        <FontAwesomeIcon icon={faPhone} />{contact.phone}
+                                        <FontAwesomeIcon icon={faPhone} title="Contact phone number"/>{contact.phone}
                                     </p>
                                     <p className="m-1">
-                                        <FontAwesomeIcon icon={faAt} />{contact.email}
+                                        <FontAwesomeIcon icon={faAt} title="Contact email"/>{contact.email}
                                     </p>
                                 </div>
                             </div>

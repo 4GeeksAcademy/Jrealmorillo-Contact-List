@@ -90,7 +90,7 @@ export const AddContact = () => {
 
                 <div className="d-grid col-6 m-5 p-5 mx-auto">
                     <button type="submit" className="btn btn-lg btn-primary m-2">Save Contact</button>
-                    <Link to="/" className="mx-auto">Or go back to the Contact List</Link>
+                    <Link to="/" className="mx-auto text-dark">Or go back to the Contact List</Link>
                 </div>
             </form>
 
