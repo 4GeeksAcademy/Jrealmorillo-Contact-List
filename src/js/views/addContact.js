@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 
 import { Context } from "../store/appContext";
 import { Link, useNavigate } from "react-router-dom";
+import "../../styles/index.css";
 
 
 export const AddContact = () => {

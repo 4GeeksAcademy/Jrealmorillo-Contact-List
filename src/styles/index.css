@@ -2,4 +2,11 @@
     General Styles
 */
 
-
+body {
+    background-image: url('../img/lista-contactos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
